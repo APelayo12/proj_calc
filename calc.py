@@ -31,3 +31,18 @@ def multiplicacion(a,b):
  mult_a = convertir_fracciones(a)
  mult_b = convertir_fracciones(b)
  return mult_a*mult_b
+
+def resta(a,b):
+ """recibe dos números, los convierte con la función anterior y los resta"""
+ minuendo = convertir_fracciones(a)
+ sustraendo = convertir_fracciones(b)
+ return minuendo - sustraendo
+
+def division(a,b):
+ """recibe dos números, los convierte con la función anterior y los divide"""
+ numerador = convertir_fracciones(a)
+ denominador = convertir_fracciones(b)
+ if(denominador == 0):
+  raise Exception("Error: el denominador no puede ser 0")
+ else:
+    return numerador / denominador
