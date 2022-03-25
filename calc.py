@@ -22,7 +22,14 @@ def convertir_fracciones(entrada):
     
   return numero
 
-  def suma(a,b):
-      sumando_a = convertir_fracciones(a)
+def suma(a,b):
+  sumando_a = convertir_fracciones(a)
   sumando_b = convertir_fracciones(b)
   return sumando_a + sumando_b
+
+def multiplicacion(a,b):
+  mult_a = convertir_fracciones(a)
+  mult_b = convertir_fracciones(b)
+  return mult_a * mult_b
+
+
